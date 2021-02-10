@@ -11,42 +11,26 @@ import model_pessoas.CsvDados;
 public class Main {
 	public static void main(String[] args) {//control + shift + c comenta várias linhas		
 		CsvDAO objCsvDAO = new CsvDAO();
-		
-		/*		
+		CsvDados objCsvDados = new CsvDados();
 		Scanner teclado = new Scanner(System.in);	
 		int id;
 		String nome;
 		int idade;
-		String sexo;	
-		*/
- 		//--------------------------------------------------------------
-		//chamo o método e jogo na variável lista
-		
-		//salva os dados a partir do CSV
-		ArrayList<CsvDados> lista = CsvReader.lerDadosDoCsv("C:\\Users\\Yuri\\Documents\\Estudos\\Códigos\\Eclipse\\CSV\\10.csv");//quando o método Main e o raiz são staticos o objeto não precisa ser instanciado
-		objCsvDAO.salvar(lista);
+		String sexo;
 		//----------------------
 		
-		
-		
-		
-		objCsvDAO.exibir();;
+		objCsvDAO.exibir();
+		System.out.print("Digite o id que quer apagar:");
+		id = teclado.nextInt();		
+		objCsvDAO.remover(id);		
+		objCsvDAO.exibir();
 	}
 }
 
-
 /*
-   		//INSERIR DADOS (FUNCIONA)
-		System.out.print("Digite o nome:");
-		nome = teclado.next();
-		System.out.print("Digite a idade:");
-		idade = teclado.nextInt();	
-		System.out.print("Digite o sexo [M/F]:");
-		sexo = teclado.next();		
-		objCsvDados.setNome(nome);
-		objCsvDados.setIdade(idade);
-		objCsvDados.setSexo(sexo);
-		objCsvDAO.salvar(objCsvDados);
+ 		//INSERIR DADOS A PARTIR DO CSV
+		//ArrayList<CsvDados> lista = CsvReader.lerDadosDoCsv("C:\\Users\\Yuri\\Documents\\Estudos\\Códigos\\Eclipse\\AluraProjects\\CSV_Refatorado\\resoucers\\CSV\\10.csv");//quando o método Main e o raiz são staticos o objeto não precisa ser instanciado
+		//objCsvDAO.salvar(lista);
 */
 /*		
   		//LER DADOS (FUNCIONA)		
@@ -73,9 +57,10 @@ public class Main {
 */
 /*
 		//REMOVE DADOS
+		objCsvDAO.exibir();
 		System.out.print("Digite o id que quer apagar:");
-		id = teclado.nextInt();
-		objCsvDados.setId(id);
-		objCsvDAO.remover(objCsvDados);
+		id = teclado.nextInt();		
+		objCsvDAO.remover(id);		
+		objCsvDAO.exibir();
 */
 
