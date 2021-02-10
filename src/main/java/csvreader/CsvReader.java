@@ -14,9 +14,9 @@ import model_pessoas.CsvDados;
 public class CsvReader {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub//C:\Users\Yuri\Documents\Estudos\Códigos\Eclipse\AluraProjects\CSV_Refatorado\resoucers\CSV
 		
-		lerDadosDoCsv("C:\\Users\\Yuri\\Documents\\Estudos\\Códigos\\Eclipse\\CSV\\10.csv");//
+		lerDadosDoCsv("C:\\Users\\Yuri\\Documents\\Estudos\\Códigos\\Eclipse\\AluraProjects\\CSV_Refatorado\\resoucers\\CSV\\10.csv");//
 		
 		CsvDados objCsvDados = new CsvDados();
 			
