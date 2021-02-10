@@ -19,6 +19,11 @@ public class Main {
 		String sexo;
 		//----------------------
 		
+<<<<<<< HEAD
+=======
+		String genero;
+		
+>>>>>>> refs/remotes/origin/master
 		objCsvDAO.exibir();
 		System.out.print("Digite o id que quer apagar:");
 		id = teclado.nextInt();		
